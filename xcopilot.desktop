@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=XCoPilot
+Comment=An X based PalmPilot Emulator
+Comment[pl]=Emulator PalmPilota pod X
+Icon=xcopilot.png
+Exec=xcopilot
+Terminal=0
+Type=Application
+# vi: encoding=utf-8
