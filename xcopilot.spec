@@ -6,6 +6,7 @@ Release:	2
 License:	Freeware
 Group:		X11/Applications
 Source0:	http://xcopilot.cuspy.com/build/%{name}-%{version}.tar.gz
+# Source0-md5:	26f71da5d04d3ecffb60e5423b5ff95c
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 URL:		http://xcopilot.cuspy.com/
