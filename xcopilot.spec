@@ -1,4 +1,5 @@
 Summary:	An X based PalmPilot Emulator
+Summary(pl):	Emulator PalmPilota pod X
 Name:		xcopilot
 Version:	0.6.6
 Release:	1
@@ -26,20 +27,18 @@ pilot-link package if you have a Pilot or PalmPilot.
 #%patch -p1
 
 %build
-CFLAGS="-g $RPM_OPT_FLAGS" ./configure --prefix=/usr
+CFLAGS="%{rpmcflags}" ./configure --prefix=/usr
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} prefix=${RPM_BUILD_ROOT}/usr install
+%{__make} prefix=$RPM_BUILD_ROOT/usr install
 
 %clean
-if [ ! ${RPM_BUILD_ROOT} = / ]; then
-  rm -rf ${RPM_BUILD_ROOT} ;
-fi
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(-, root, root) %doc README
-%attr(-, root, root) %{_bindir}/xcopilot
-%attr(-, root, root) /usr/man/man1/xcopilot.1
+%doc README
+%attr(755,root,root) %{_bindir}/xcopilot
+%{_mandir}/man1/xcopilot.1*
