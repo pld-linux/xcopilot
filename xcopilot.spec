@@ -35,7 +35,7 @@ pi-getrom z pakietu pilot-link (je¶li masz Pilota lub PalmPilota).
 
 %build
 rm -f missing
-aclocal
+%{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure
