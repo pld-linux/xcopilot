@@ -3,7 +3,7 @@ Summary(pl):	Emulator PalmPilota pod X
 Name:		xcopilot
 Version:	0.6.6
 Release:	2
-License:	Freeware
+License:	GPL v2
 Group:		X11/Applications
 Source0:	http://xcopilot.cuspy.com/build/%{name}-%{version}.tar.gz
 # Source0-md5:	26f71da5d04d3ecffb60e5423b5ff95c
@@ -44,12 +44,12 @@ rm -f missing
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_applnkdir}/Utilities,%{_pixmapsdir}}
+install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Utilities
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 %clean
@@ -57,8 +57,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README
+%doc AUTHORS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_bindir}/xcopilot
 %{_mandir}/man1/xcopilot.1*
-%{_applnkdir}/Utilities/*
+%{_desktopdir}*
 %{_pixmapsdir}/*
