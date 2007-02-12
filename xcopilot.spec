@@ -1,5 +1,5 @@
 Summary:	An X based PalmPilot Emulator
-Summary(pl):	Emulator PalmPilota pod X
+Summary(pl.UTF-8):   Emulator PalmPilota pod X
 Name:		xcopilot
 Version:	0.6.6
 Release:	2
@@ -25,11 +25,11 @@ Linux image now that Linux boots on the Pilot). The ROM image can be
 obtained from the pilot using the pi-getrom command from the
 pilot-link package if you have a Pilot or PalmPilot.
 
-%description -l pl
-XCopilot to pe³ny emulator sprzêtu USR/3Com PalmPilot. Wymaga do
-dzia³ania obrazu ROM-u z Pilota (lub obrazu Linuksa, by uruchomiæ
-Linuksa na Pilocie). Obraz ROM-u mo¿na uzyskaæ u¿ywaj±c polecenia
-pi-getrom z pakietu pilot-link (je¶li masz Pilota lub PalmPilota).
+%description -l pl.UTF-8
+XCopilot to peÅ‚ny emulator sprzÄ™tu USR/3Com PalmPilot. Wymaga do
+dziaÅ‚ania obrazu ROM-u z Pilota (lub obrazu Linuksa, by uruchomiÄ‡
+Linuksa na Pilocie). Obraz ROM-u moÅ¼na uzyskaÄ‡ uÅ¼ywajÄ…c polecenia
+pi-getrom z pakietu pilot-link (jeÅ›li masz Pilota lub PalmPilota).
 
 %prep
 %setup -q
