@@ -1,5 +1,5 @@
 Summary:	An X based PalmPilot Emulator
-Summary(pl.UTF-8):   Emulator PalmPilota pod X
+Summary(pl.UTF-8):	Emulator PalmPilota pod X
 Name:		xcopilot
 Version:	0.6.6
 Release:	2
